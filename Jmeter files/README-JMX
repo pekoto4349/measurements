@@ -25,6 +25,6 @@ as a request parameter ad not on the path as the 1st mode.
 
 In the 3rd (hybrid) mode OW_NR the structure and use of test plan was exactly the same as 2nd mode NR-NR.
 
-* Constant timer above requests was utilized in order to avoid errors on OW for too many requests
+* Constant timer bellow requests was utilized in order to avoid errors on OpenWhisk for too many requests
 ** Grey Names of test elements are disabled thus are not used on the experiment even though they exist on the structure
 
