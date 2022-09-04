@@ -1,1 +1,30 @@
-This explains the Jmeter tool's environment in case the .jmx files are needed.
+This section explains the Jmeter tool's environment in case the .jmx files are needed to be used.
+
+In the .png files we can see screenshots from the test plan of the Jmeter, that can provide some insight on the structure
+of our test plan and the set-up of our experiment.
+
+In owowsettings1.png, aside from the structure of the test plan on far left we can see the body of the Request that we created and looped in order to 
+get our measurements. Through that .png we can observe the following:
+1) Server Name and Port Number are the server and the port we used for the OpenWhisk interaction,  
+2) Request name was parametrized with a variable, so that its clear which request is being completed at any time
+3) The path is the path we got from the web action we used with the wsk action get NAME --url command on OpenWhisk
+
+As for the Structure of our Test Plan we created a Single Threaded Group with the requests being looped for 40 times on Loop Controller for Sample Size
+on each sequence number varying from 1-50. Sample counter has range from 0-39 to count the sample size, Loop Controller for Sample Size Loops for 40 times, 
+Request Group Counter is a simple counter from 1-10 in order to be sure which request is handled at any given time, Sequence Counter has a range from 0-50 
+in order to measure all the range of sequences with a step of 5 from 1 to 50 and finally Loop Controller for total diff Requests is itterating 11 times
+in order to handle the 10 groups of different requests (1-11). (sequence counter and request group counters use user defined variables with starting values
+shown on owowsettings2.png)
+
+
+In nrnrsettings1.png and nrnrsettings2.png, we used almost the same structure and we iteratted our requests in the same way as we did before with 
+one major difference. In the Loop 1-10 of groups of different requests we iterrated the 1st group of 40 samples in a different loop from the rest, in order 
+to make our experiment continuous and avoid the problem of having number of iterrations 1,5,10,15...etc (1 to 5 increases by 4 though the rest increase by
+5). In nrnrsettings3.png we created our user defined variables where this time myseq variable (number of functions executed on each request) is passed on 
+as a request parameter ad not on the path as the 1st mode.
+
+In the 3rd (hybrid) mode OW_NR the structure and use of test plan was exactly the same as 2nd mode NR-NR.
+
+* Constant timer above requests was utilized in order to avoid errors on OW for too many requests
+** Grey Names of test elements are disabled thus are not used on the experiment even though they exist on the structure
+
