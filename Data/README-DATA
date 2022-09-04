@@ -5,3 +5,12 @@ In each .csv file as it is (without utilizing jmeter for insight)  we can observ
 for each request to complete, the request's name (as it was named in the Jmeter tool), the HTTP response code, the Thread Group number (which there is 
 always 1-1 since we only used single user requests), the status of each request (whether there was a success or not), the size of the message in bytes and 
 finally the 3 flags for the Sample Count, the Execution Correctness and the Error Count. 
+
+The names of these .csv files are a referance to which mode of orchestration of our experiment we used for measurement in each file. 
+OW refers to 1st mode where Sequence Operator is the orchestrator for OpenWhisk runtime functions, 
+NR refers to 2nd mode where Function Sequence is in Node-RED executed as a Docker Action in OpenWhisk,
+and OW-NR refers to the hybrid mode we used where Orchestration is inside Node-RED that invokes functions deployed 
+on OpenWhisk environment.
+The 100,200,1000 in the names of each data file refer to the innate delay of each function in the function sequence  we used with 
+the Artificial Delay Function we created (in ms). Consequently the OW-OW-100 in the name of a file means that those data where extracted from a case
+of the 1st mode of orchestration (ow-ow) with innate delay of functions of 100ms.
