@@ -17,3 +17,5 @@ of the 1st mode of orchestration (ow-ow) with innate delay of functions of 100ms
 
 Finally, in some files you can observe in their names the words _summary , _tree , _aggrrepp, _intree, etc. As mentioned before the csv files are able to
 be opened on Jmeter, so each of this files derived from a specific tab of the results in the Jmeter Tool, the Summary, the Aggregate Report etc. 
+
+Screenshots are provided in this directory for a better visual aid
