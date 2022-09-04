@@ -14,3 +14,6 @@ on OpenWhisk environment.
 The 100,200,1000 in the names of each data file refer to the innate delay of each function in the function sequence  we used with 
 the Artificial Delay Function we created (in ms). Consequently the OW-OW-100 in the name of a file means that those data where extracted from a case
 of the 1st mode of orchestration (ow-ow) with innate delay of functions of 100ms.
+
+Finally, in some files you can observe in their names the words _summary , _tree , _aggrrepp, _intree, etc. As mentioned before the csv files are able to
+be opened on Jmeter, so each of this files derived from a specific tab of the results in the Jmeter Tool, the Summary, the Aggregate Report etc. 
