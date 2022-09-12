@@ -1,10 +1,15 @@
 In this section we provide the Data we exctracted from the whole experiment for each orchestration mode. We recommend those .csv files to be opened
 through Jmeter Tool in order to have a holistic view of every measurement.
 
-In each .csv file as it is (without utilizing jmeter for insight)  we can observe, from left to right column, the time frame each request took place, the total time
-for each request to complete, the request's name (as it was named in the Jmeter tool), the HTTP response code, the Thread Group number (which there is 
-always 1-1 since we only used single user requests), the status of each request (whether there was a success or not), the size of the message in bytes and 
-finally the 3 flags for the Sample Count, the Execution Correctness and the Error Count. 
+In each .csv file as it is (without utilizing jmeter for insight)  we can observe, from left to right column:
+the time frame each request took place, 
+the total time for each request to complete, 
+the request's name (as it was named in the Jmeter tool), 
+the HTTP response code, 
+the Thread Group number (which there is always 1-1 since we only used single user requests), 
+the status of each request (whether there was a success or not), 
+the size of the message in bytes 
+the 3 flags which consist of the Sample Count, the Execution Correctness and the Error Count. 
 
 The names of these .csv files are a referance to which mode of orchestration of our experiment we used for measurement in each file. 
 OW refers to 1st mode where Sequence Operator is the orchestrator for OpenWhisk runtime functions, 
