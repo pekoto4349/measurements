@@ -5,3 +5,6 @@ This repository includes the related data and load generation files for the subm
 2) **Delay Function Implementation** : Here we provide the artifical-delay function we created
 3) **Jmeter Files** : Here you can Find the experiment's setup on Jmeter tool along with some screenshots
 
+## 
+
+The .xls graphs we used for the analysis of the results are provided on /measurements repository
